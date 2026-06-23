@@ -10,8 +10,8 @@ from cinema.views import (
     MovieViewSet
 )
 
-cinema_hall_list = MovieViewSet.as_view(actions={"get": "list", "post": "create"})
-cinema_hall_detail = MovieViewSet.as_view(
+cinema_hall_list = CinemaHallViewSet.as_view(actions={"get": "list", "post": "create"})
+cinema_hall_detail = CinemaHallViewSet.as_view(
             actions={
                 "get": "retrieve",
                 "put": "update",
